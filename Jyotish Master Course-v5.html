@@ -19,6 +19,8 @@ a{color:#7dd3fc;text-underline-offset:3px;overflow-wrap:anywhere}.muted,small,fi
 figure{margin:18px 0;max-width:650px}svg{display:block;width:100%;background:#10172a;border-radius:8px}.chart-grid{fill:none;stroke:#c3ad72;stroke-width:1.5}.sign-label{fill:#fcd34d;font:13px system-ui;text-anchor:middle}.lagna{fill:#86efac;font:bold 13px system-ui;text-anchor:middle}.planet-label{fill:#f1f5f9;font:bold 14px system-ui;text-anchor:middle}.muted-label{fill:#71819d;font:14px system-ui;text-anchor:middle}.centre-label{fill:#a5b4fc;font:16px Georgia;text-anchor:middle}
 .layout-charts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.layout-charts figure{min-width:0}
 .client-d1-charts{grid-template-columns:repeat(2,minmax(0,1fr))}.client-d1-charts figure{max-width:none}
+.family-timeline{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:10px;background:#0d1426;padding:8px}.family-timeline svg{min-width:720px}
+.tl-seg,.tl-pin{cursor:pointer}.tl-seg:hover rect,.tl-seg:focus rect{fill-opacity:1;stroke:#fff;stroke-width:1.4}.tl-pin:hover circle,.tl-pin:focus circle{fill:#fca5a5}.tl-pin:focus,.tl-seg:focus{outline:none}
 label{display:block;margin:12px 0;font:.95rem/1.5 system-ui}.choice{padding:9px;border:1px solid var(--line);border-radius:7px;cursor:pointer}.choice:has(input:checked){border-color:#fbbf24;background:#fbbf240d}
 input[type=number],input[type=search],textarea,select{display:block;margin-top:6px;width:100%;padding:11px;border:1px solid #60708c;border-radius:7px;background:#0e1426;color:var(--text);font:1rem system-ui}
 input[type=radio],input[type=checkbox]{accent-color:var(--gold);width:17px;height:17px;vertical-align:middle}fieldset{border:0;padding:0;margin:20px 0}legend{font-weight:bold}
@@ -1054,6 +1056,67 @@ COURSE.lessons["17"].caseStudy += `
     <li><b>Synthesise promise + timing + transit</b> into one committed reading, then state plainly what the charts cannot decide (lived happiness, medical/fertility specifics).</li>
   </ol>
   <p><b>Conclusion (Q3):</b> An <b>enduring, duty-bound marriage passing through its hardest domestic stretch (~2024–2030)</b> — distance and strain over home and routine, the mother carrying the heavier load (Rahu in her 4th, Saturn over her 7th), the father more inwardly detached (Ketu in his 4th), but <b>not</b> a separation signature (no Sade Sati, no rupture of the 7th lords) — with <b>Munu as the binding emotional centre</b> of the household, and a <b>renewal and warming of the bond from ~2030</b> as both partners enter their respective 7th-lord mahadashas. This is the committed output of the traditional method shown step by step above; it remains a traditional interpretation to be checked against lived fact, not an empirically proven forecast.</p>`;
+COURSE.lessons["17"].caseStudy += `
+  <hr>
+  <h3>Phase 2 · Question 4 — the marriage actually broke down: accountability and re-reading</h3>
+  <p><b>Disclosed facts (reader-reported, 14 Oct 2026):</b> Purus and Mahela have lived separately since Nov 2018, with only brief visit-based co-living until May 2019 and none since. Each attributes the breakdown to the other (Mahela's reluctance to return to the matrimonial home after delivery vs. Purus's charge of non-accountability). Relations collapsed amid alleged abusive language from Mahela's parents and elder brother; a false missing-person complaint and complaints to Purus's employer in 2019; litigation from lower courts to the Supreme Court (2021–2024), which transferred Mahela's cases to a neutral jurisdiction after her brother and others allegedly assaulted Purus in the Bilaspur family court in Sept 2021; and a contested divorce Purus filed in April 2022. Munu lives with Mahela; father–daughter contact is rare. These are one side's reported facts; this analysis does not adjudicate blame.</p>
+  <p class="notice"><b>Accountability — my earlier predictions were wrong on the central question.</b> Question 3 committed to "an enduring, duty-bound marriage... <b>not</b> a separation signature... renewal of the bond from ~2030." The reality is the opposite: a years-long separation and a contested divorce that was already filed in April 2022. Question 2 called the period from 24 Nov 2018 one of "planning and shared principles" — that is the exact month the separation began. <b>These are clear misses and they remain on the record, unedited.</b> What follows is honest post-hoc error analysis — <b>not</b> a claim that I predicted this. I did not.</p>
+  <h4>Interactive timeline — dasha periods vs. the real "fate shifts"</h4>
+  <p>Hover or tab through the Vimshottari antardasha blocks and the numbered event pins. The top band is the <b>disclosed</b> relationship status (reported facts, not a chart-derived score); the two lanes are each partner's calculated mahadasha/antardasha. The point of the graphic is to <i>see</i> how the separation and litigation line up with the dispute-lord (6th/8th/12th) sub-periods.</p>
+  <div id="family-timeline" class="family-timeline"></div>
+  <p id="timeline-readout" class="visual-readout" role="status" aria-live="polite">Hover or focus a block or a numbered pin to read its details.</p>
+
+  <h4>What the charts actually said — the separation signatures I underweighted</h4>
+  <p>The painful lesson is that the breakdown was <i>not</i> invisible in the charts. I let a generic heuristic ("Saturn on the marriage significators = durability") override explicit house-lordship evidence that pointed to dispute and separation. Re-read honestly:</p>
+  <div class="table-scroll"><table><caption>Natal factors that supported separation/litigation — re-weighted after disclosure</caption>
+    <thead><tr><th scope="col">Chart</th><th scope="col">Factor</th><th scope="col">Correct separative reading</th></tr></thead><tbody>
+      <tr><th scope="row">Purus</th><td><b>6th lord Mercury sits in the 7th</b>, with Mars (1st/8th lord) and debilitated Sun.</td><td>The 6th house is disputes, enemies and litigation; its lord <i>inside</i> the marriage house injects conflict and court matters into the marriage. Mars in the 7th (Manglik) adds discord; the 8th lord in the 7th is separative. I noted these and then wrongly subordinated them to "cooperation."</td></tr>
+      <tr><th scope="row">Purus</th><td><b>4th lord Moon debilitated in the 8th</b>; 7th lord Venus with separative Saturn in gandanta Mula.</td><td>Debilitated 4th lord in the 8th = rupture of domestic peace and sudden upheavals in home life. Venus (spouse-karaka) afflicted by Saturn and in a "cutting" nakshatra = coldness and severance, not loyal endurance.</td></tr>
+      <tr><th scope="row">Mahela</th><td><b>7th lord Jupiter retrograde in the 12th</b>; debilitated Mercury (lagna lord + Darakaraka) in the 7th.</td><td>The 7th lord in the 12th is a classic loss-of-marriage / separation placement; a debilitated lagna-lord-and-spouse-karaka in the 7th marks the marriage itself as afflicted and effortful.</td></tr>
+      <tr><th scope="row">Mahela</th><td><b>6th lord Saturn in the 5th</b>; <b>Rahu in the 4th</b>, disposited by the 12th-placed Jupiter.</td><td>Rahu in the 4th fits reluctance toward the matrimonial home and attachment to the natal home — exactly the reported trigger. The 6th lord's prominence supports a litigious temperament to the dispute.</td></tr>
+    </tbody></table></div>
+
+  <h4>The timing was also explicit — and I misread it</h4>
+  <div class="table-scroll"><table><caption>Exact dasha at each real event (local calculation), with the lordship meaning</caption>
+    <thead><tr><th scope="col">Event</th><th scope="col">Purus MD/AD</th><th scope="col">Mahela MD/AD</th><th scope="col">Separative lordship signal</th></tr></thead><tbody>
+      <tr><td>Separation begins, Nov 2018</td><td><b>Mercury / Jupiter</b> (AD from 24 Nov 2018)</td><td><b>Rahu / Saturn</b></td><td>Purus: 6th-lord MD + 12th-lord AD = dispute → separation, starting the very month of the AD change. Mahela: 6th-lord (Saturn) sub-period. I had called this Purus period "planning and shared principles."</td></tr>
+      <tr><td>Complaints, 2019</td><td>Mercury / Jupiter</td><td>Rahu / Saturn</td><td>Same 6th/12th-lord emphasis; 12th-lord action = accusations, loss, legal exposure.</td></tr>
+      <tr><td>Court assault, Sept 2021</td><td>Mercury / <b>Saturn</b></td><td>Rahu / <b>Mercury</b> (debilitated DK)</td><td>Mahela's afflicted-Darakaraka period = marital crisis in litigation; Purus's Saturn AD = protracted, heavy dispute.</td></tr>
+      <tr><td>Contested divorce filed, Apr 2022</td><td>Mercury / Saturn / <b>Venus</b></td><td>Rahu / Mercury / Jupiter</td><td>Venus (Purus's 7th lord/DK) pratyantar = direct marriage-matter action — the filing.</td></tr>
+      <tr><td>Supreme Court phase, 2024</td><td><b>Ketu</b> / Venus</td><td>Rahu / Venus</td><td>Ketu MD onset = severance/finality in home/marriage.</td></tr>
+    </tbody></table></div>
+  <p><b>The core error, named:</b> in a chart already carrying 6th-lord-in-7th, 8th-lord-in-7th, a debilitated 4th lord in the 8th, and the spouse-lord in the 12th (Mahela), Saturn's contact with the marriage significators signified <b>karmic coldness and severance</b>, not "durable duty." The nodal mahadashas over the 4th house that I read as benign "domestic restructuring, not divorce" were in fact the engines of the home's breakdown, firing during 6th/12th-lord sub-periods. This is the central teaching of the case: <b>house lordship (6th, 8th, 12th) outranks generic karaka sentiment, and the same Saturn can mean "endure" or "sever" depending on the surrounding affliction.</b></p>
+
+  <h4>Current scenario in 2026 — bounded, low-confidence, partly post-hoc</h4>
+  <p>Given that I missed the central call, I present the current reading with explicit low confidence and without pretending to independent foresight. On 14 Oct 2026, Purus runs <b>Ketu / Rahu</b> and Mahela runs <b>Rahu / Sun</b>. Ketu mahadasha (Purus) over the 4th is a period of detachment, endings and severance of home ties — consistent with his pursuit of a contested divorce and with estrangement rather than reconciliation. Mahela's Rahu / Sun places her 12th lord (Sun) in the 6th — loss/separation expressed through ongoing dispute and litigation. <b>The chart-consistent current reading is: continued estrangement and legal process, with movement toward legal finality rather than reconciliation.</b> No reconciliation signature is active for either partner at this date.</p>
+  <p><b>Honest correction to the "2030 renewal" claim:</b> Q3 predicted a bond renewal when both enter their 7th-lord mahadashas around 2030 (Purus→Venus, Mahela→Jupiter). Given the established total breakdown and filed divorce, that reading is almost certainly <b>wrong for this marriage</b>. The same ~2030 periods are better read as <b>closure of the marital-legal matter and the start of separate new chapters</b> (Venus MD could bring Purus a new relationship; Jupiter MD could center Mahela on the child and her own expansion) — not a reunion. The very ambiguity between "renewal of this marriage" and "a new, separate chapter" is exactly what makes such dasha-sentiment predictions unreliable, and it is what tripped my earlier answer.</p>
+  <p><b>Munu:</b> she lives with her mother with rare paternal contact. My Q3 "binding emotional centre" framing is also contradicted by events — a child whose significator sits on the parents' marriage axis can equally be the <b>contested subject</b> of the dispute, which is what occurred. Her welfare should be understood through care and observation, never through chart blame.</p>
+
+  <h4>Student walkthrough — how to read a breakdown without hindsight</h4>
+  <ol>
+    <li><b>Count the afflictions to the marriage before weighing the supports.</b> Tally 6th/8th/12th-lord involvement with the 7th house and its lord. Here both charts were heavy with them; that should have capped any "stable marriage" verdict.</li>
+    <li><b>Let house lordship override karaka mood.</b> "Saturn with Venus" is not automatically loyalty; with a 6th-lord in the 7th and a 12th-placed 7th lord, it reads as coldness and separation.</li>
+    <li><b>Date the dasha to the dispute lords.</b> Separation tracked Purus's 6th-lord/12th-lord period (from 24 Nov 2018) and Mahela's 6th-lord sub-period; litigation tracked her afflicted-Darakaraka period. Check these <i>before</i> narrating a mood.</li>
+    <li><b>Do not convert a benefic-sounding future dasha into "reconciliation."</b> A 7th-lord period can equally time a divorce decree or a new relationship. State the ambiguity instead of resolving it optimistically.</li>
+  </ol>
+  <p><b>Conclusion (Q4):</b> The marriage broke down into prolonged separation and contested divorce, and <b>my earlier Phase 2 readings — especially the Q3 "enduring bond / 2030 renewal" — were materially wrong and are left uncorrected as a record of that miss.</b> The charts did contain strong separation signatures (6th-lord in the 7th and debilitated 4th lord in the 8th for Purus; 7th lord in the 12th and afflicted Darakaraka for Mahela), firing through dispute-lord dashas that dated the separation to late 2018. The chart-consistent current (2026) reading is <b>continued estrangement and legal process moving toward finality, not reconciliation</b> — offered with low confidence given the demonstrated miss. This case is, concretely, the Day 17 thesis in action: these traditional methods can be internally reasoned yet still fail the central prediction, and intellectual honesty requires recording the failure rather than retrofitting a success.</p>`;
+COURSE.lessons["17"].caseStudy += `
+  <hr>
+  <section class="panel" data-section="predictive-lessons">
+  <h3>Predictive lessons for students — distilled from this case</h3>
+  <p>This panel collects the transferable craft lessons from the Purus–Mahela case so they are not lost inside a single question. The honest value of the case is that a confident reading (Q3) was <b>wrong</b> about the central fact (the marriage broke down), and examining <i>why</i> teaches more than a lucky hit would.</p>
+  <ol>
+    <li><b>Count the afflictions before you weigh the supports.</b> Before deciding a marriage is "stable," tally involvement of the 6th (disputes), 8th (rupture), and 12th (loss/separation) lords with the 7th house and its lord. Here both charts were loaded with them — 6th lord in the 7th and 4th lord debilitated in the 8th (Purus), 7th lord in the 12th and a debilitated spouse-karaka in the 7th (Mahela). That alone should cap any "durable marriage" verdict.</li>
+    <li><b>House lordship outranks karaka sentiment.</b> "Saturn with Venus" is not automatically loyalty. In an afflicted chart the same Saturn reads as coldness and <i>severance</i>. Ask what a planet <b>rules</b> before invoking its generic significations.</li>
+    <li><b>Date the dasha to the functional lords, not to a mood.</b> The separation tracked Purus's 6th-lord/12th-lord period (from 24 Nov 2018) and Mahela's 6th-lord sub-period; the litigation tracked her afflicted-Darakaraka period. Identify which <i>house-lords</i> a dasha activates <b>before</b> narrating a storyline.</li>
+    <li><b>A benefic-sounding future dasha is not automatically "good news."</b> A 7th-lord period can time a divorce decree or a new relationship just as easily as a reunion. State the ambiguity explicitly instead of resolving it optimistically — that optimism is exactly what produced the Q3 "2030 renewal" error.</li>
+    <li><b>Keep the four layers separate:</b> disclosed fact → chart evidence → traditional interpretation → committed prediction. Mixing them lets an interpretation masquerade as a fact.</li>
+    <li><b>Run blinded, then score honestly.</b> Make the prediction before disclosure, and when the outcome arrives, record a <b>miss</b> as a miss. Never relabel a near-date, an engagement, or a quarrel as a "hit," and never edit an earlier answer to look correct.</li>
+    <li><b>Calibrate confidence to your track record.</b> After a demonstrated miss, lower the confidence attached to later readings of the same charts rather than projecting fresh certainty.</li>
+    <li><b>Hold the ethical lines.</b> Do not assign blame to a child, and do not convert 5th-house or Jupiter symbolism into medical, fertility, or pregnancy certainties. Chart symbolism describes themes to test, not verdicts on real people.</li>
+  </ol>
+  <p><b>The meta-lesson of Day 17:</b> a reading can be internally well-reasoned and still fail the real prediction. The discipline that makes astrology <i>teachable</i> is not confidence — it is a transparent method, preserved predictions, honest scoring, and the willingness to show your misses in the same detail as your hits.</p>
+  </section>`;
 COURSE.lessons["17"].sources.push("marriageframework","matchingreference");
 COURSE.sources.push(
   ["marriageframework","AstroSage: overview of traditional marriage-matching components","https://www.astrosage.com/freechart/matchmaking.asp","Describes Guna Milan, Manglik and Navamsha considerations. Used as a description of traditional practice, not endorsement of its predictive, medical or marriage-success claims. No client birth data were submitted."],
@@ -1223,6 +1286,91 @@ function quizMarkup(key) {
 function sourceMarkup(ids) {
   return `<section class="references"><h3>Sources and scope</h3><ul>${ids.map(id=>{const s=COURSE.sources.find(s=>s[0]===id);return `<li>${link(s[2],s[1])}<br><small>${esc(s[3])}</small></li>`;}).join("")}</ul><p>Traditional rules describe a school's approach, not by themselves empirical proof. Research claims apply only to the outcome and study design described. External pages can change.</p></section>`;
 }
+function buildFamilyTimeline(container) {
+  if(!container) return;
+  const ORDER_V=["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"];
+  const YEARS_V=[7,20,6,10,7,18,16,19,17];
+  const COLORS={Ketu:"#9ca3af",Venus:"#f472b6",Sun:"#f59e0b",Moon:"#e5e7eb",Mars:"#ef4444",Rahu:"#7c3aed",Jupiter:"#fbbf24",Saturn:"#38bdf8",Mercury:"#34d399"};
+  const yearMs=365.25*86400000, T0=Date.parse("2016-01-01T00:00:00Z"), T1=Date.parse("2035-01-01T00:00:00Z");
+  const X0=70, X1=980, x=ms=>X0+((ms-T0)/(T1-T0))*(X1-X0);
+  const iso=ms=>new Date(ms).toISOString().slice(0,7);
+  // Lordship notes per dasha lord for each native (for the readout)
+  const LORD={
+    Purus:{Ketu:"Ketu (in 4th; severance/detachment of home)",Venus:"Venus (7th lord + Darakaraka; spouse matters)",Sun:"Sun (5th lord, debilitated in 7th)",Mars:"Mars (1st/8th lord in 7th; discord, Manglik)",Rahu:"Rahu (in 10th; public/legal)",Jupiter:"Jupiter (9th/12th lord; the 12th = loss/separation)",Saturn:"Saturn (10th/11th lord; protracted, heavy)",Mercury:"Mercury (3rd/6th lord in 7th; 6th = disputes/litigation)",Moon:"Moon (4th lord, debilitated in 8th; home rupture)"},
+    Mahela:{Ketu:"Ketu (in 10th; reputation/public)",Venus:"Venus (2nd/9th lord in 5th)",Sun:"Sun (12th lord in 6th; loss via dispute)",Mars:"Mars (3rd/8th lord, exalted in 5th)",Rahu:"Rahu (in 4th; disturbed home, natal-home pull)",Jupiter:"Jupiter (4th/7th lord, retrograde in 12th; marriage loss)",Saturn:"Saturn (5th/6th lord in 5th; 6th = disputes)",Mercury:"Mercury (1st/10th lord + Darakaraka, debilitated in 7th; afflicted marriage)",Moon:"Moon (11th lord in 5th)"}
+  };
+  function segments(birthMs,moon){
+    const nak=Math.floor(moon/(40/3)); let idx=nak%9;
+    let start=birthMs-(moon/(40/3)-nak)*YEARS_V[idx]*yearMs;
+    const segs=[];
+    while(start<T1){
+      const mdLen=YEARS_V[idx]*yearMs; let c=start;
+      for(let i=0;i<9;i++){const ad=(idx+i)%9,end=c+mdLen*YEARS_V[ad]/120;
+        if(end>T0&&c<T1) segs.push({md:ORDER_V[idx],ad:ORDER_V[ad],start:c,end:end});
+        c=end;}
+      start+=mdLen; idx=(idx+1)%9;
+    }
+    return segs;
+  }
+  const people=[
+    {name:"Purus",y:150,segs:segments(Date.parse("1989-10-31T12:15:00Z"),214.7210131960639)},
+    {name:"Mahela",y:240,segs:segments(Date.parse("1992-02-29T14:25:00Z"),273.2305362439878)}
+  ];
+  const events=[
+    {n:1,date:"2018-02-01",label:"Marriage (Bilaspur)"},
+    {n:2,date:"2018-11-15",label:"Separation begins (end of cohabitation phase)"},
+    {n:3,date:"2019-05-15",label:"Co-living fully stops"},
+    {n:4,date:"2019-07-01",label:"False complaints / approaches to employer"},
+    {n:5,date:"2021-09-15",label:"Alleged assault at Bilaspur family court"},
+    {n:6,date:"2022-04-15",label:"Purus files contested divorce"},
+    {n:7,date:"2024-06-01",label:"Supreme Court transfers cases to neutral jurisdiction"},
+    {n:8,date:"2026-10-14",label:"Present assessment date"}
+  ];
+  // Disclosed relationship-status step line (reported facts, not chart-derived)
+  const steps=[["2018-02-01",60],["2018-11-15",78],["2019-05-15",92],["2022-04-15",104]];
+  let d="M "+x(Date.parse(steps[0][0]))+" "+steps[0][1];
+  for(let i=1;i<steps.length;i++){const px=x(Date.parse(steps[i][0]));d+=" L "+px+" "+steps[i-1][1]+" L "+px+" "+steps[i][1];}
+  d+=" L "+x(Date.parse("2026-10-14"))+" "+steps[steps.length-1][1];
+  const rects=people.map(p=>p.segs.map((s,i)=>{
+    const sx=Math.max(x(s.start),X0), ex=Math.min(x(s.end),X1), w=Math.max(ex-sx,0.5);
+    const mid=(s.start+s.end)/2, showLabel=(ex-sx)>26;
+    return `<g class="tl-seg" role="button" tabindex="0" data-kind="seg" data-person="${p.name}" data-md="${s.md}" data-ad="${s.ad}" data-from="${iso(s.start)}" data-to="${iso(s.end)}">`+
+      `<rect x="${sx.toFixed(1)}" y="${p.y}" width="${w.toFixed(1)}" height="40" rx="3" fill="${COLORS[s.ad]}" fill-opacity="0.82" stroke="#0b0d1e" stroke-width="0.6"></rect>`+
+      (showLabel?`<text x="${(sx+w/2).toFixed(1)}" y="${p.y+24}" text-anchor="middle" font-size="10" fill="#0b0d1e" font-family="system-ui">${s.ad.slice(0,2)}</text>`:"")+
+      `</g>`;
+  }).join("")).join("");
+  const pins=events.map(e=>{const px=x(Date.parse(e.date+"T12:00:00Z"));
+    return `<g class="tl-pin" role="button" tabindex="0" data-kind="pin" data-label="${e.label}" data-date="${e.date}">`+
+      `<line x1="${px}" y1="118" x2="${px}" y2="296" stroke="#fca5a5" stroke-width="1" stroke-dasharray="3 3"></line>`+
+      `<circle cx="${px}" cy="112" r="9" fill="#111827" stroke="#fca5a5" stroke-width="1.5"></circle>`+
+      `<text x="${px}" y="116" text-anchor="middle" font-size="11" fill="#fca5a5" font-family="system-ui" font-weight="700">${e.n}</text></g>`;
+  }).join("");
+  let ticks="";
+  for(let yr=2016;yr<=2034;yr+=2){const px=x(Date.parse(yr+"-01-01T00:00:00Z"));ticks+=`<line x1="${px}" y1="300" x2="${px}" y2="305" stroke="#64748b"></line><text x="${px}" y="318" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="system-ui">${yr}</text>`;}
+  const legend=["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"].map((n,i)=>`<g><rect x="${70+i*102}" y="340" width="12" height="12" rx="2" fill="${COLORS[n]}"></rect><text x="${86+i*102}" y="350" font-size="10" fill="#cbd5e1" font-family="system-ui">${n}</text></g>`).join("");
+  container.innerHTML=`<svg viewBox="0 0 1000 365" role="img" aria-label="Interactive timeline of Vimshottari antardasha periods for Purus and Mahela from 2016 to 2035 with real-world event markers. Use the readout below.">
+    <text x="70" y="30" font-size="12" fill="#fde68a" font-family="system-ui" font-weight="700">Disclosed relationship status (reported facts — not chart-derived)</text>
+    <path d="${d}" fill="none" stroke="#fca5a5" stroke-width="2.5"></path>
+    <text x="70" y="145" font-size="12" fill="#93c5fd" font-family="system-ui" font-weight="700">Purus — MD/AD</text>
+    <text x="70" y="235" font-size="12" fill="#93c5fd" font-family="system-ui" font-weight="700">Mahela — MD/AD</text>
+    ${rects}${pins}${ticks}${legend}
+  </svg>`;
+  const readout=document.getElementById("timeline-readout");
+  const describe=el=>{
+    if(!readout||!el) return;
+    if(el.dataset.kind==="seg"){
+      readout.innerHTML=`<b>${el.dataset.person}:</b> ${el.dataset.md} mahadasha / ${el.dataset.ad} antardasha · ${el.dataset.from} → ${el.dataset.to}. <b>${el.dataset.ad}</b> here means ${LORD[el.dataset.person][el.dataset.ad]}.`;
+    } else {
+      readout.innerHTML=`<b>Event:</b> ${el.dataset.date} — ${el.dataset.label}. (Disclosed fact; compare it with the antardasha blocks directly below.)`;
+    }
+  };
+  container.querySelectorAll("[data-kind]").forEach(el=>{
+    el.addEventListener("mouseenter",()=>describe(el));
+    el.addEventListener("focus",()=>describe(el));
+    el.addEventListener("click",()=>describe(el));
+    el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();describe(el);}});
+  });
+}
 function render() {
   stopVisuals();
   const L=COURSE.lessons[current], index=KEYS.indexOf(current);
@@ -1236,6 +1384,7 @@ function render() {
     document.getElementById("client-d1-charts").innerHTML=`<div><h4>Purus — East Indian D1</h4>${chartSVG(purus,"east")}</div><div><h4>Mahela — East Indian D1</h4>${chartSVG(mahela,"east")}</div>`;
     const munu=chartData(71.06666518962457,[["Sun",310.28569059552336],["Moon",181.23514271399304],["Mars",11.873079065251869],["Mercury",327.6560263947452],["Jupiter",237.0534143867333],["Venus",268.3712855991028],["Saturn",263.1116315320514],["Rahu",90.62311010996943,true],["Ketu",270.62311010996943,true]]);
     document.getElementById("munu-d1-chart").innerHTML=`<h4>Munu — East Indian D1</h4>${chartSVG(munu,"east")}`;
+    buildFamilyTimeline(document.getElementById("family-timeline"));
   }
   const lab=document.getElementById("chapter-lab");
   renderVisuals(current,document.getElementById("visual-learning"));
